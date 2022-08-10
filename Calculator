@@ -1,0 +1,26 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main() {
+    float num1;
+    float num2;
+    char selection;
+    cout<<"enter first number: ";
+    cin>>num1;
+    cout<<"enter second number: ";
+    cin>> num2;
+    cout<<"type 'A' for Addition"<<endl<<"type 'S' for subtraction"<<endl<<"type 'D' for divide"<<endl<<"type 'M' for multiplication"<<endl;
+    cin>> selection;
+    if(selection=='A')
+    cout<<"The sum of two numbers is: "<<num1+num2;
+    else if(selection=='S')
+    cout<<"The Subtraction of two numbers is: "<<num1-num2;
+    else if(selection=='D')
+    cout<<"The Division of two numbers is: "<<num1/num2;
+    else if(selection=='M')
+    cout<<"The multiplication of two numbers is: "<<num1*num2;
+    else
+    cout<<"enter valid option";
+    return 0;
+}
